@@ -71,6 +71,9 @@ export default function Bangladesh(){
     }
     return <div style={bdStyle}>
         <h1>Bangladesh</h1>
+        {
+            countUp >50 && <p>Bangladesh reaches At 50 runs</p>
+        }
         <p style={{fontSize:'24px', fontWeight: 'bold'}}>Score Runs: {countUp}</p>
         <p style={{fontSize:'24px', fontWeight: 'bold'}}>Bangladesh Needs {countDown} Runs Off {countBall} Balls</p>
         <button style={btnStyle} onClick={handle1}>1</button>
